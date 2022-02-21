@@ -7,10 +7,11 @@ class PrimeFactors
 
     public function calculatePrimeFactors (int $numberToFactor): array
     {
+        $result = array();
         $actualNumber = $numberToFactor;
 
         while($actualNumber !== 1){
-            $newPrimeFactor = $this->calculatePrimeFactors($actualNumber);
+            $newPrimeFactor = $this->calculateFirstPrimeFactor($actualNumber);
             $actualNumber = $actualNumber/$newPrimeFactor;
             $result[] = $newPrimeFactor;
         }
