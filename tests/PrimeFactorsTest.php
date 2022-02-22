@@ -27,6 +27,6 @@ class PrimeFactorsTest extends TestCase
 
         $result = $this->primeFactors->calculatePrimeFactors(15);
 
-        $this->assertEquals($expected, $result);
+        $this->assertEqualsCanonicalizing($expected, $result);
     }
 }
