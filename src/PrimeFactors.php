@@ -4,7 +4,7 @@ namespace Deg540\PHPTestingBoilerplate;
 
 class PrimeFactors
 {
-    public function calculatePrimeFactors(int $numberToFactor): array
+    /*public function calculatePrimeFactors(int $numberToFactor): array
     {
         $result = array();
         $actualNumber = $numberToFactor;
@@ -14,5 +14,5 @@ class PrimeFactors
         }
     }
 
-    public function 
+    public function */
 }
